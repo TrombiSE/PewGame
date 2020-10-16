@@ -11,7 +11,6 @@ public class PlayerDeath : MonoBehaviour
         {
             Destroy(gameObject);
             LevelManager.instance.Respawn();
-
             Application.LoadLevel(0);
 
         }

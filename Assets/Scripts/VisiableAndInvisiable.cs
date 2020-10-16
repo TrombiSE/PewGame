@@ -20,9 +20,6 @@ public class VisiableAndInvisiable : MonoBehaviour
         {
             gameObject.GetComponent<Renderer>().enabled = true;
 
-            
-            Invoke("InvisiableAgain", 1);
-
         }
     }
 
