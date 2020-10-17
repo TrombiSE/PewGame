@@ -10,9 +10,9 @@ public class VisiableAndInvisiable : MonoBehaviour
         gameObject.GetComponent<Renderer>().enabled = false;
     }
 
-    void InvisiableAgain()
+    public void VisiableAgain()
     {
-        gameObject.GetComponent<Renderer>().enabled = false;
+        gameObject.GetComponent<Renderer>().enabled = true;
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -20,6 +20,13 @@ public class VisiableAndInvisiable : MonoBehaviour
         {
             gameObject.GetComponent<Renderer>().enabled = true;
 
+        }
+    }
+    private void Update()
+    {
+        if (Input.GetKey("r"))
+        {
+            Application.LoadLevel(0);
         }
     }
 

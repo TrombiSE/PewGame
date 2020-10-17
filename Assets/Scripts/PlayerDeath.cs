@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
@@ -10,9 +11,20 @@ public class PlayerDeath : MonoBehaviour
         if (collision.gameObject.CompareTag("Trap"))
         {
             Destroy(gameObject);
-            LevelManager.instance.Respawn();
-            Application.LoadLevel(0);
+            //LevelManager.instance.Respawn();
+            
+            //Task.Delay(1000).Wait();
+            //Application.LoadLevel(0);
 
+        }
+
+    }
+    private void Update()
+    {
+        if (Input.GetKey("r"))
+        {
+            //LevelManager.instance.Respawn();
+            Application.LoadLevel(0);
         }
     }
 
