@@ -22,13 +22,7 @@ public class VisiableAndInvisiable : MonoBehaviour
 
         }
     }
-    private void Update()
-    {
-        if (Input.GetKey("r"))
-        {
-            Application.LoadLevel(0);
-        }
-    }
+    
 
 
 

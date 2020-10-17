@@ -19,14 +19,7 @@ public class PlayerDeath : MonoBehaviour
         }
 
     }
-    private void Update()
-    {
-        if (Input.GetKey("r"))
-        {
-            //LevelManager.instance.Respawn();
-            Application.LoadLevel(0);
-        }
-    }
+   
 
 
 }
